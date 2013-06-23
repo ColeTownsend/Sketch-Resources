@@ -8,6 +8,6 @@ $(document).ready(function () {
 	        html.push('alt="' + shot.title + '"></a>');
 	    });
 	
-	    $('#dribbb').html(html.join(''));
-	}, {page: 1, per_page: 20});
+	    $('#drib').html(html.join(''));
+	}, {page: 1, per_page: 12});
 });
