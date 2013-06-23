@@ -442,6 +442,7 @@ Full-Width Styles
 
 .download-link:hover {
     background: #ED8794;
+    color: #f5f5f5;
       -webkit-transition: all 0.2s ease;
       -moz-transition: all 0.2s ease;
       -o-transition: all 0.2s ease;
