@@ -356,6 +356,7 @@ Full-Width Styles
     display: -ms-flexbox;   /* MID: IE 10 */
     display: -webkit-flex;  /* NEW, Chrome 21+ */
     display: flex;          /* NEW: Opera 12.1, Firefox 22+ */
+
     
     -webkit-box-align: center; 
     -moz-box-align: center; /* OLD… */
@@ -375,52 +376,52 @@ Full-Width Styles
 }
 
 #drib {
-    width: 100%;
-    display: -webkit-box;
-	display: -moz-box;
-	display: box;
-	-webkit-box-pack: justify;
-	-moz-box-pack: justify;
-	box-pack: justify;
-	display: -webkit-flex;
-	-webkit-justify-content: space-between;
-	-moz-justify-content: space-between;
-    -webkit-flex-direction: row;
-    -webkit-flex-wrap: wrap;
-    -moz-flex-direction: row;
-    -moz-flex-wrap: wrap;
-    padding: 0;
-    margin: 0;
-    margin-bottom: 2em;
+  width: 100%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  box-pack: justify;
+  display: -webkit-flex;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -webkit-flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-direction: row;
+  -moz-flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 2em;
 }
 
 .drib > div {
-    border: 6px solid rgba(255,255,255,1);
-    box-shadow: 0 2px #E0E0E0;
-    border-radius: 4px;
-    position: relative;
-    overflow: hidden;
-    min-width: 100px;
-    width: 30%;
-    max-width: 400px;
-    margin: 10px auto;
-    -webkit-transition: opacity .4s ease-in-out;
-    -moz-transition: opacity .4s ease-in-out;
-    transition: opacity .4s ease-in-out;
+  border: 6px solid rgba(255,255,255,1);
+  box-shadow: 0 2px #E0E0E0;
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+  min-width: 100px;
+  width: 30%;
+  max-width: 400px;
+  margin: 10px auto;
+  -webkit-transition: opacity .4s ease-in-out;
+  -moz-transition: opacity .4s ease-in-out;
+  transition: opacity .4s ease-in-out;
 }
 
 .drib img {
-    position: relative;
-    display: block;
-    z-index: 10;
-    width: 100%;
-    height: auto;
-    border-radius: 4px;
-    background-position: center center;
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+  position: relative;
+  display: block;
+  z-index: 10;
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  background-position: center center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
 }
 
 .drib > div:hover {
