@@ -377,16 +377,24 @@ Full-Width Styles
 
 #drib {
   width: 100%;
+  
   display: -webkit-box;
   display: -moz-box;
   display: box;
+  display: -webkit-flex;
+
   -webkit-box-pack: justify;
   -moz-box-pack: justify;
   box-pack: justify;
-  display: -webkit-flex;
+  
   -webkit-justify-content: space-between;
+  justify-content: space-between;
   -moz-justify-content: space-between;
+  flex-pack: distribute;
+  
   -webkit-flex-direction: row;
+  flex-direction: row;
+  flex-wrap: wrap;
   -webkit-flex-wrap: wrap;
   -moz-flex-direction: row;
   -moz-flex-wrap: wrap;
