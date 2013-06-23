@@ -39,17 +39,22 @@
                     <a class="download-link zip" href="https://github.com/ColeTownsend/Sketch-Resources/zipball/master">ZIP</a>
                     <a class="download-link tar" href="https://github.com/ColeTownsend/Sketch-Resources/tarball/master">TAR</a>
                   </section>
-            </div>
-            
-            <!-- SHOTS -->
-          
-          <aside class="drib" id="drib">
-
-          </aside>
-          
+            </div>        
           
 
       </section>
+        <div class='flex-wrap'>
+        <aside class="drib" id="drib">
+            <div><a target="_blank" href='http://dribbble.com/shots/1053190-HTC-First'><img src='http://dribbble.s3.amazonaws.com/users/172830/screenshots/1053190/dribbble_2x_1x.png' alt='' /></a></div>
+            <div><a target="_blank" href='http://dribbble.com/shots/1015475-Chrome-Browser-Window'><img src='http://dribbble.s3.amazonaws.com/users/172830/screenshots/1015475/chrome_2x_1x.png' alt='' /></a></div>
+            <div><a target="_blank" href='http://dribbble.com/shots/973930-The-Royal-Macintoshes'><img src='http://dribbble.s3.amazonaws.com/users/172830/screenshots/973930/dribbble_2x_sized_1x.png' alt='' /></a></div>
+            <div><a target="_blank" href='http://dribbble.com/shots/971338-iMac-youMac-he-sheMac'><img src='http://dribbble.s3.amazonaws.com/users/172830/screenshots/971338/dribbble_2x_sized_1x.png' alt='' /></a></div>
+            <div><a target="_blank" href='http://dribbble.com/shots/969976-Sketched-Minimus'><img src='http://dribbble.s3.amazonaws.com/users/172830/screenshots/969976/sketch_minimus_1x.png' alt='' /></a></div>
+            <div><a target="_blank" href='http://dribbble.com/shots/949226-Dark-Twitter-Icon'><img src='http://dribbble.s3.amazonaws.com/users/172830/screenshots/949226/icon_alt_1x.jpg' alt='' /></a></div>
+            <div><a target="_blank" href='http://dribbble.com/shots/1125660-iOS-7-Twitter-Icon'><img src='http://dribbble.s3.amazonaws.com/users/172830/screenshots/1125660/ios_7_twitter_icon_1x.png' alt='' /></a></div>
+      </aside>
+      </div>
+      
     </div>
 
     <!-- FOOTER  -->
@@ -63,22 +68,33 @@
       </footer>
     </div>
 
-    <!-- SCRIPTS -->
-    <script src="https://raw.github.com/ColeTownsend/Sketch-Resources/gh-pages/javascripts/jribbble.js"></script>
+    <!-- SCRIPTS
+    <script src="http://tylergaw.github.io/jribbble-no-dependencies/jribbble-no-dep-1.0.0.js"></script>
+<!--
     
     <script>
         var callback = function (shot) {
             var html = '';
-
+            html += '<div>';
             html += '<a href="' + shot.url + '" target="_blank">';
 	        html += '<img src="' + shot.image_url + '" ';
 	        html += 'alt="' + shot.title + '"></a>';
+	        html += '</div>';
 
-            document.getElementById('#drib').innerHTML = html;
+            document.getElementById('drib').innerHTML = html;
         };
-
-        jribbble.getShotById('914651', callback);
+        
+        jribbble.getShotById('1053190', callback);
+ /*
+       jribbble.getShotById('1125660', callback);
+        jribbble.getShotById('973930', callback);
+        jribbble.getShotById('969976', callback);
+        jribbble.getShotById('971338', callback);
+        jribbble.getShotById('949226', callback);
+*/
+        
     </script>
+-->
 
   </body>
 </html>
