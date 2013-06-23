@@ -1,5 +1,4 @@
 # Sketch Resources
-*** 
 
 Here is a list of sketch.app resources created by Cole Townsend. As new devices, OSes, and other things come out, I'll create corresponding .sketch files here.
 
