@@ -8,7 +8,6 @@
 
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
     <link href="http://fonts.googleapis.com/css?family=Varela+Round" rel='stylesheet' type='text/css'>
-    <script src="http://coletownsend.com/web/content/script/jquery-1.7.1.min.js"></script>
 
     
     <title>Sketch Resources</title>
@@ -65,8 +64,21 @@
     </div>
 
     <!-- SCRIPTS -->
-    <script src="http://coletownsend.com/web/content/script/jribbble.js"></script>
-    <script src="http://coletownsend.com/web/content/script/dribbble.js"></script>
+    <script src="../javascripts/jribbble.js"></script>
+    
+    <script>
+        var callback = function (shot) {
+            var html = '';
+
+            html += '<a href="' + shot.url + '" target="_blank">';
+	        html += '<img src="' + shot.image_url + '" ';
+	        html += 'alt="' + shot.title + '"></a>';
+
+            document.getElementById('#drib').innerHTML = html;
+        };
+
+        jribbble.getShotById('914651', callback);
+    </script>
 
   </body>
 </html>
