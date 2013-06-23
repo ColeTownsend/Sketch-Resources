@@ -350,72 +350,38 @@ Full-Width Styles
 
 /* SHOTS */
 
-.flex-wrap {
-    display: -webkit-box;   /* OLD: Safari,  iOS, Android browser, older WebKit browsers.  */
-    display: -moz-box;      /* OLD: Firefox (buggy) */ 
-    display: -ms-flexbox;   /* MID: IE 10 */
-    display: -webkit-flex;  /* NEW, Chrome 21+ */
-    display: flex;          /* NEW: Opera 12.1, Firefox 22+ */
-
-    
-    -webkit-box-align: center; 
-    -moz-box-align: center; /* OLD… */
-    -ms-flex-align: center; /* You know the drill now… */
-    -webkit-align-items: center;
-    align-items: center;
-    
-    -webkit-box-pack: center; 
-    -moz-box-pack: center; 
-    -ms-flex-pack: center; 
-    -webkit-justify-content: center;
-    justify-content: center;
-    
-    margin: 0 auto;
-    height: 100%;
-    width: 80%
+#drib {
+  max-width: 80%;
+  margin: 0 auto;
 }
 
-#drib {
-  width: 100%;
-  
-  display: -webkit-box;
-  display: -moz-box;
-  display: box;
-  display: -webkit-flex;
-
-  -webkit-box-pack: justify;
-  -moz-box-pack: justify;
-  box-pack: justify;
-  
-  -webkit-justify-content: space-between;
-  justify-content: space-between;
-  -moz-justify-content: space-between;
-  flex-pack: distribute;
-  
-  -webkit-flex-direction: row;
-  flex-direction: row;
-  flex-wrap: wrap;
-  -webkit-flex-wrap: wrap;
-  -moz-flex-direction: row;
-  -moz-flex-wrap: wrap;
-  padding: 0;
-  margin: 0;
-  margin-bottom: 2em;
+.drib {
+   /* Prevent vertical gaps */
+    padding-top: 10%;
+    padding-bottom: 10%;
+   line-height: 0;
+  /* Grid */
+   -webkit-column-count: 3;
+   -webkit-column-gap:   5%;
+   -moz-column-count:    3;
+   -moz-column-gap:      5%;
+   column-count:         3;
+   column-gap:           5%;
+   
 }
 
 .drib > div {
   border: 6px solid rgba(255,255,255,1);
   box-shadow: 0 2px #E0E0E0;
+  width: 100% !important;
+  height: auto !important;
+  margin-top: 5%;
   border-radius: 4px;
   position: relative;
-  overflow: hidden;
   min-width: 100px;
-  width: 30%;
-  max-width: 400px;
-  margin: 10px auto;
-  -webkit-transition: opacity .4s ease-in-out;
-  -moz-transition: opacity .4s ease-in-out;
-  transition: opacity .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  -moz-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
 }
 
 .drib img {
@@ -435,9 +401,9 @@ Full-Width Styles
 .drib > div:hover {
     box-shadow: 0 4px #E0E0E0;
     bottom: 2px;
-    -webkit-transition: all .4s ease-in-out;
-    -moz-transition: all .4s ease-in-out;
-    transition: all .4s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
         /* Animations 
     -webkit-animation: hoverSmall 3s infinite;
     -webkit-animation-timing-function: ease-in-out;
@@ -455,17 +421,6 @@ Full-Width Styles
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
 }
-
-
-.drib:hover > div {
-    opacity: .5;
-}
-
-.drib:hover > div:hover {
-    opacity: 1;
-}
-
-
 
 .downloads {
   height: 80px;
