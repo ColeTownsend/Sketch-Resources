@@ -351,7 +351,7 @@ Full-Width Styles
 /* SHOTS */
 
 #drib {
-  max-width: 80%;
+  max-width: 70%;
   margin: 0 auto;
 }
 
@@ -371,7 +371,6 @@ Full-Width Styles
 }
 
 .drib > div {
-  padding: 8px;
   background: #f5f5f5;
   width: 100% !important;
   height: auto !important;
@@ -384,8 +383,10 @@ Full-Width Styles
 
 .drib img {
   z-index: 10;
-  width: 100%;
+  width: 90%;
   height: auto;
+  margin: 0 auto;
+  padding-bottom: 20px;
 }
 
 .drib > div:hover {
