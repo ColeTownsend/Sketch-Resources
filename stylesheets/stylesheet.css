@@ -388,7 +388,6 @@ Full-Width Styles
   display: block;
   margin: 0 auto;
   padding-bottom: 20px;
-  border-radius: 4px;
 }
 
 .drib > div:hover {
@@ -440,24 +439,16 @@ Full-Width Styles
   padding-top: 18px;
 }
 
-.zip {
-  float: right;
-  margin-left: 10px;
-}
-
-.tar {
-  float: left;
-  margin-right: 10px;
-}
-
 .download-link {
   display: inline-block;
   width: auto;
   border-radius: 4px;
-  font-size: 16px;
-  padding: 8px 32px;
+  font-size: 24px;
   text-align: center;
+  padding: 16px 0;
+  width: 100%;
   color: #f5f5f5;
+  letter-spacing: 2px;
   background: #e37d8a;
   font-weight: bold;
   text-decoration: none;
